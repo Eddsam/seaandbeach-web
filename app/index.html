@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> ::Sea And Beach:: </title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="bower_components/materialize/dist/css/materialize.min.css">
+  <link rel="stylesheet" href="bower_components/sweetalert/dist/sweetalert.css">
+
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="app.css">
+
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+    <section class="NavLateral full-width">
+      <div class="NavLateral-FontMenu full-width ShowHideMenu"></div>
+      <div class="NavLateral-content full-width">
+          <header class="NavLateral-title full-width center-align">
+              SEA AND BEACH <i class="zmdi zmdi-close NavLateral-title-btn ShowHideMenu"></i>
+          </header>
+          <figure class="full-width NavLateral-logo">
+              <img src="assets/img/logo.png" alt="material-logo" class="responsive-img center-box">
+              <figcaption class="center-align">Be Happy</figcaption>
+          </figure> 
+          <div class="NavLateral-Nav">
+              <ul class="full-width">
+                  <li>
+                      <a href="#" class="waves-effect waves-light"><i class="zmdi zmdi-desktop-mac zmdi-hc-fw"></i> Dashboard</a>
+                  </li>
+                  <li class="NavLateralDivider"></li>
+                  <li>
+                      <a href="#!/view2" class="NavLateral-DropDown  waves-effect waves-light"><i class="zmdi zmdi-language-css3 zmdi-hc-fw"></i> <i class="zmdi zmdi-chevron-down NavLateral-CaretDown"></i> CSS</a>
+                      <ul class="full-width">
+                          <li><a href="#about" class="waves-effect waves-light">ABOUT</a></li>
+                          <li class="NavLateralDivider"></li>
+                          <li><a href="table.html" class="waves-effect waves-light">Table</a></li>
+                      </ul>
+                  </li>
+                  <li class="NavLateralDivider"></li>
+                  <li>
+                      <a href="#" class="NavLateral-DropDown  waves-effect waves-light"><i class="zmdi zmdi-widgets zmdi-hc-fw"></i> <i class="zmdi zmdi-chevron-down NavLateral-CaretDown"></i> Components</a>
+                      <ul class="full-width">
+                          <li><a href="button.html" class="waves-effect waves-light">Button</a></li>
+                          <li class="NavLateralDivider"></li>
+                          <li><a href="form.html" class="waves-effect waves-light">Forms</a></li>
+                      </ul>
+                  </li>
+                  <li class="NavLateralDivider"></li>
+                  <li>
+                      <a href="#" class="NavLateral-DropDown  waves-effect waves-light"><i class="zmdi zmdi-view-web zmdi-hc-fw"></i> <i class="zmdi zmdi-chevron-down NavLateral-CaretDown"></i> Sample Pages</a>
+                      <ul class="full-width">
+                          <li><a href="template.html" class="waves-effect waves-light">Blank Page</a></li>
+                      </ul>
+                  </li>   
+              </ul>
+          </div>  
+      </div>  
+  </section>
+    
+  
+   <section class="ContentPage full-width">
+    <div class="ContentPage-Nav full-width">
+      <ul class="full-width">
+          <li class="btn-MobileMenu ShowHideMenu"><a href="#" class="tooltipped waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Menu"><i class="zmdi zmdi-more-vert"></i></a></li>
+          <li><figure><img src="assets/img/user.png" alt="UserImage"></figure></li>
+          <li style="padding:0 5px;">User Name</li>
+          <li><a href="#" class="tooltipped waves-effect waves-light btn-ExitSystem" data-position="bottom" data-delay="50" data-tooltip="Logout"><i class="zmdi zmdi-power"></i></a></li>
+          <li><a href="#" class="tooltipped waves-effect waves-light btn-Search" data-position="bottom" data-delay="50" data-tooltip="Search"><i class="zmdi zmdi-search"></i></a></li>
+          
+      </ul>   
+    </div>
+    <!-- <ul class="menu">
+        <li><a href="#!/view1">view1</a></li>
+        <li><a href="#!/view2">view2</a></li>
+      </ul> -->
+      <div ng-view></div>
+    </section>
+
+  <div>Angular seed app: v<span app-version></span></div>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="bower_components/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/materialize/dist/js/materialize.min.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="app.js"></script>
+  <script src="view1/view1.js"></script>
+  <script src="view2/view2.js"></script>
+  <script src="home/home.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+</body>
+</html>
